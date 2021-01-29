@@ -30,7 +30,7 @@ router.get('/getTenders', function(req, res, next) {
       });
 });
 
-router.post('/tender-delete',function(req,res,next){
+router.post('/tender-delete',function(req,res,next){  
     // var newProduct=req.body;
     console.log("req body =========",req.body);
     Tender.deleteOne({_id:req.body._id}).exec(function(err,response){
